@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from requests import get
 
 
-with open('output/com_book.csv', 'w') as out_file:
+with open('com_book.csv', 'w') as out_file:
     writer = csv.writer(out_file, delimiter=';')
     writer.writerow(['NAME', 'URL', 'AUTHOR', 'PRICE', 'NUMBER OF RATINGS', 'AVERAGE RATING'])
 
